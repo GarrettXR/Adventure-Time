@@ -17,7 +17,7 @@ alert("You encounter a wild mankey!")
 var action = prompt("Do you run, defeat it, or capture it? Type run, defeat it, or capture it.")
 
 if (action === "run") {
-	alert("The mankey alerts the rest of it's band. They chase you down and beat you to death! Game Over!")
+	alert("The mankey alerts the rest of it's band. They chase you down and beat you to death! Game Over! Score:0")
 } else if (action === "defeat it") {
 	alert("You gain expierence and continue your journey.")
 
@@ -26,25 +26,25 @@ if (action === "run") {
 	var conflict = prompt("Will you run away, have your pokemon attack, or steal his gun and shoot him? Type run away, attack, or steal gun.")
 
 	if (conflict === "run away") {
-	alert("He shoots you with his gun. It was an instant death. Game Over.")
+	alert("He shoots you with his gun. It was an instant death. Game Over. Score:5")
 	} else if (conflict === "attack") {
-		alert(`He shoots your ${starter} and you. Game Over.`)
+		alert(`He shoots your ${starter} and you. Game Over. Score:2`)
 	} else {
 		alert("Congrats you survived but are now a wanted fugitive for murder!")
 
 		var criminal = prompt("Do you turn yourself in or stay on the run? Type stay on the run or turn yourself in.")
 
 		if (criminal === "turn yourself in"){
-			alert("You end up in prison, and die in a gang fight. Game Over.")
+			alert("You end up in prison, and die in a gang fight. Game Over. Score:10")
 		} else if (criminal === "stay on the run") {
 			alert("You end up joining the heinous organization called Team Rocket.")
 
 			var project = prompt(`After surviving many months your ${starter} evolves, and you are recognized of higher skill by the organization. They invite you to work on a big project. Will you join? Type yes or no`)
 
 			if (project === "yes") {
-				alert("There was a horrible accident and you caused a nuclear detonation large enough to destroy the world. Game Over.")
+				alert("There was a horrible accident and you caused a nuclear detonation large enough to destroy the world. Game Over. Score:20")
 			} else if(project === "no") {
-				alert("You continue your work as a grunt and eventually get caught and arrested. Game Over")
+				alert("You continue your work as a grunt and eventually get caught and arrested. Game Over. Score:15")
 			}
 		}
 	  }
@@ -56,24 +56,24 @@ if (action === "run") {
 	var conflict = prompt("Will you run away, have your pokemon attack, or steal his gun and shoot him? Type run away, attack, or steal gun.")
 
 	if (conflict === "run away") {
-		alert("He shoots you with his gun. It was an instant death. Game Over.")
+		alert("He shoots you with his gun. It was an instant death. Game Over. Score:5")
 	} else if (conflict === "attack") {
-		alert(`He shoots your ${starter} and you. Game Over.`)
+		alert(`He shoots your ${starter} and you. Game Over. Score:2`)
 	} else {
 		alert("Congrats you survived but are now a wanted fugitive for murder!")
 		var criminal = prompt("Do you turn yourself in or stay on the run? Type stay on the run or turn yourself in.")
 
 		if (criminal === "turn yourself in"){
-			alert("You end up in prison, and die in a gang fight. Game Over.")
+			alert("You end up in prison, and die in a gang fight. Game Over. Score:10")
 		} else if (criminal === "stay on the run") {
 			alert("You end up joining the heinous organization called Team Rocket.")
 
 			var project = prompt(`After surviving many months your ${starter} evolves, and you are recognized of higher skill by the organization. They invite you to work on a big project. Will you join? Type yes or no`)
 
 			if (project === "yes") {
-				alert("There was a horrible accident and you caused a nuclear detonation large enough to destroy the world. Game Over.")
+				alert("There was a horrible accident and you caused a nuclear detonation large enough to destroy the world. Game Over. Score:20")
 			} else if (project === "no") {
-				alert("You continue your work as a grunt and eventually get caught and arrested. Game Over")
+				alert("You continue your work as a grunt and eventually get caught and arrested. Game Over. Score:15")
 			}
 	
 		}
